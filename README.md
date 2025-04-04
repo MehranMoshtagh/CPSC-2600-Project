@@ -59,7 +59,7 @@ Event Management Application is a full-stack single-page web application that al
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/event-management-app.git
+   git clone https://github.com/MehranMoshtagh/CPSC-2600-Project.git
    cd event-management-app
    ```
 
