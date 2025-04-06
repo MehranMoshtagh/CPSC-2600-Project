@@ -6,6 +6,8 @@
 
 Event Management Application is a full-stack single-page web application that allows users to browse, create, and manage events as well as submit RSVPs. The project demonstrates full-stack development using **React** for the frontend, **Node.js** with **Express** for the backend, and **MongoDB Atlas** for the database. The application emphasizes modular design, robust validation, and a user-friendly interface.
 
+Live Website: 
+
 ---
 
 ## Features
