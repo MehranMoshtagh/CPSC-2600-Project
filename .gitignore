@@ -20,5 +20,4 @@ Thumbs.db
 
 # Client (React) specific
 client/node_modules/
-client/build/
 client/.env
