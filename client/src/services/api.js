@@ -1,4 +1,4 @@
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:5000/api/v1';
+const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:443/api/v1';
 
 async function getEvents() {
   const response = await fetch(`${API_BASE}/events`);
