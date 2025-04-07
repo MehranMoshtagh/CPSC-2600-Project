@@ -1,0 +1,9 @@
+{
+  "name": "event-management",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix client run build && cp -r client/build server/public",
+    "start": "npm --prefix server run start"
+  }
+}
