@@ -6,6 +6,7 @@ require('dotenv').config();
 const { connectToDatabase } = require('./config/database');
 const apiRoutes = require('./routes');
 const errorHandler = require('./middleware/errorHandler');
+const path = require("path");
 
 // Enable CORS
 app.use(cors());
@@ -14,6 +15,12 @@ app.use(express.json());
 
 // Mount API routes under /api/v1
 app.use('/api/v1', apiRoutes);
+
+app.use(express.static(path.join(__dirname, "public")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "public", "index.html"));
+});
 
 // Global error handler
 app.use(errorHandler);
