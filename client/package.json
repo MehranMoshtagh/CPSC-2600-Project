@@ -9,8 +9,9 @@
         "react-scripts": "5.0.1"
     },
     "scripts": {
-        "dev": "npx parcel watch src/index.js src/style.css --dist-dir ../server/public",
-        "start": "npx parcel build src/index.js src/style.css --dist-dir ../server/public"
+        "dev": "react-scripts start",
+        "build": "react-scripts build",
+        "deploy": "react-scripts build && cp -r build ../server/public"
     },
     "eslintConfig": {
         "extends": [
