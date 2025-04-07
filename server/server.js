@@ -17,11 +17,11 @@ app.use(express.json());
 app.use('/api/v1', apiRoutes);
 
 // Serve static files from the build directory
-app.use(express.static(path.join(__dirname, "public/build")));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Serve index.html for all other routes
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "public/build", "index.html"));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html')); // ✅ Correct
 });
 
 // Global error handler
